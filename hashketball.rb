@@ -198,25 +198,25 @@ end
 # player_stats('Alan Anderson')
 
 
-# def num_points_scored()
-#   score = nil
-#   player = nil 
-# game_hash.each do |key, value|
-#   value[:players].each do |prop|
-#       if score == nil 
-#         score = prop[:points]
-#         player = prop[:player_name]
-#       end
+def num_points_scored()
+  score = nil
+  player = nil 
+game_hash.each do |key, value|
+  value[:players].each do |prop|
+      if score == nil 
+        score = prop[:points]
+        player = prop[:player_name]
+      end
 
-#       if score < prop[:points] 
-#         score = prop[:points] 
-#         player = prop[:player_name]
-#       end
-#     end
-#   end
-#   return player +' with ' +"#{score} points"
-# end
-# num_points_scored()
+      if score < prop[:points] 
+        score = prop[:points] 
+        player = prop[:player_name]
+      end
+    end
+  end
+  return player +' with ' +"#{score} points"
+end
+num_points_scored()
 
 
 # def winning_team()
