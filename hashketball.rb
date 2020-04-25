@@ -244,9 +244,9 @@ game_hash.each do |key, value|
 #   winning_team()
  
 
-# def player_with_longest_name()
-#   player = nil
-#   name_length = 0
+def player_with_longest_name()
+  player = nil
+  name_length = 0
 
 # game_hash.each do |key, value|
 #   value[:players].each do |prop|
