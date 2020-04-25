@@ -216,30 +216,30 @@ game_hash.each do |key, value|
   end
   return player +' with ' +"#{score} points"
 end
-num_points_scored()
+# num_points_scored()
 
 
-# def winning_team()
-#   team1 = nil
-#   team1_score = 0
-#   team2 = nil 
-#   team2_score = 0
+def winning_team()
+  team1 = nil
+  team1_score = 0
+  team2 = nil 
+  team2_score = 0
 
-# game_hash.each do |key, value|
-#   value[:players].each do |prop|
+game_hash.each do |key, value|
+  value[:players].each do |prop|
       
-#         if value[:team_name] == "Brooklyn Nets"
-#         team1 = value[:team_name]
-#         team1_score += prop[:points]
-#       end
-#     if value[:team_name] == "Charlotte Hornets"
-#         team2 = value[:team_name]
-#         team2_score += prop[:points]
-#       end
-#     end
-#   end
-#   return team1_score > team2_score ? team1 : team2; 
-#   end
+        if value[:team_name] == "Brooklyn Nets"
+        team1 = value[:team_name]
+        team1_score += prop[:points]
+      end
+    if value[:team_name] == "Charlotte Hornets"
+        team2 = value[:team_name]
+        team2_score += prop[:points]
+      end
+    end
+  end
+  return team1_score > team2_score ? team1 : team2; 
+  end
 
 #   winning_team()
  
