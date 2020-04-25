@@ -153,21 +153,21 @@ end
 # shoe_size('Kemba Walker')
 
 
-# def team_colors(team)
-#   game_hash.each do |key, value|
-#     if value[:team_name] == team
-#     return value[:colors]
-#   end
-# end
-# end
+def team_colors(team)
+  game_hash.each do |key, value|
+    if value[:team_name] == team
+    return value[:colors]
+  end
+end
+end
 # team_colors('Charlotte Hornets')
 
-# def team_names()
-#   game_hash.collect do |key, value|
-#   value[:team_name]
-#   end
-# end
-# team_names()
+def team_names()
+  game_hash.collect do |key, value|
+  value[:team_name]
+  end
+end
+team_names()
 
 # def player_numbers(team)
 #   team_numbers = []
