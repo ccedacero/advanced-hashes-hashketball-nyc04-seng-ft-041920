@@ -136,7 +136,7 @@ game_hash.each do |key, value|
     end
   end
 end
-# end
+end
 # # num_points_scored('Kemba Walker')
 
 # def shoe_size(passed_name)
