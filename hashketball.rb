@@ -169,31 +169,31 @@ def team_names()
 end
 team_names()
 
-# def player_numbers(team)
-#   team_numbers = []
-# game_hash.each do |key, value|
-#   value[:players].each do |prop|
-#     if value[:team_name] == team 
-#       team_numbers << prop[:number]
-#   end
-# end
-# end
-# team_numbers
-# end
+def player_numbers(team)
+  team_numbers = []
+game_hash.each do |key, value|
+  value[:players].each do |prop|
+    if value[:team_name] == team 
+      team_numbers << prop[:number]
+  end
+end
+end
+team_numbers
+end
 
 # player_numbers("Brooklyn Nets")
 
-# def player_stats(player_name)
-#   player_stats = nil
-# game_hash.each do |key, value|
-#   value[:players].each do |prop|
-#   if player_name == prop[:player_name]
-#     player_stats = prop
-#   end
-#   end
-# end
-# player_stats.tap { |hs| hs.delete(:player_name)}
-# end
+def player_stats(player_name)
+  player_stats = nil
+game_hash.each do |key, value|
+  value[:players].each do |prop|
+  if player_name == prop[:player_name]
+    player_stats = prop
+  end
+  end
+end
+player_stats.tap { |hs| hs.delete(:player_name)}
+end
 
 # player_stats('Alan Anderson')
 
