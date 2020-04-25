@@ -128,11 +128,11 @@ end
 
 # Write code here
 
-def num_points_scored(passed_name)
+def num_points_scored(name)
 score = nil
 game_hash.each do |key, value|
   value[:players].each do |prop|
-  if prop[:player_name] == passed_name
+  if prop[:player_name] == name
       score = prop[:points]
     end
   end
