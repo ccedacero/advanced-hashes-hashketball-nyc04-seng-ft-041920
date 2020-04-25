@@ -273,13 +273,13 @@ game_hash.each do |key, value|
       general_steals = prop[:steals]
     end
 
-#     if name_length <  prop[:player_name].length && player_steals < prop[:steals]
-#     player = prop[:player_name]
-#     name_length = prop[:player_name].length
-#     player_steals =  prop[:steals]
-#       end
-#     end
-#   end
-# player_steals == general_steals ? true : false
-# end
+    if name_length <  prop[:player_name].length && player_steals < prop[:steals]
+    player = prop[:player_name]
+    name_length = prop[:player_name].length
+    player_steals =  prop[:steals]
+      end
+    end
+  end
+player_steals == general_steals ? true : false
+end
 #   long_name_steals_a_ton?()
