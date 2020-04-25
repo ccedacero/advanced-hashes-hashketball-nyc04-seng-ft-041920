@@ -206,21 +206,22 @@ def num_points_scored(name)
   player = nil 
 game_hash.each do |key, value|
   value[:players].each do |prop|
-      if score == nil 
+    if name == prop[:player_name]
+       if score == nil 
         score = prop[:points]
         player = prop[:player_name]
-      end
+       end
 
-      if score < prop[:points] && score == name 
+      if score < prop[:points] 
         score = prop[:points] 
         player = prop[:player_name]
+       end
       end
     end
   end
-  # return player +' with ' +"#{score} points"
   return score 
+  # return player +' with ' +"#{score} points"
 end
-# num_points_scored()
 
 
 def winning_team()
