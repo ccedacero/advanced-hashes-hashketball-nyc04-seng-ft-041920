@@ -262,16 +262,16 @@ end
 
 # player_with_longest_name()
 
-#   def long_name_steals_a_ton?()
-#   player = nil
-#   name_length = 0
-#   player_steals = 0
-# general_steals = 0 
-# game_hash.each do |key, value|
-#   value[:players].each do |prop|
-#     if general_steals < prop[:steals]
-#       general_steals = prop[:steals]
-#     end
+  def long_name_steals_a_ton?()
+  player = nil
+  name_length = 0
+  player_steals = 0
+general_steals = 0 
+game_hash.each do |key, value|
+  value[:players].each do |prop|
+    if general_steals < prop[:steals]
+      general_steals = prop[:steals]
+    end
 
 #     if name_length <  prop[:player_name].length && player_steals < prop[:steals]
 #     player = prop[:player_name]
