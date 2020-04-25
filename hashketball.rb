@@ -248,17 +248,17 @@ def player_with_longest_name()
   player = nil
   name_length = 0
 
-# game_hash.each do |key, value|
-#   value[:players].each do |prop|
-#     if name_length <  prop[:player_name].length
-#     player = prop[:player_name]
-#     name_length = prop[:player_name].length
-#       end
-#     end
-#   end
-# # return name_length
-# return player
-# end
+game_hash.each do |key, value|
+  value[:players].each do |prop|
+    if name_length <  prop[:player_name].length
+    player = prop[:player_name]
+    name_length = prop[:player_name].length
+      end
+    end
+  end
+# return name_length
+return player
+end
 
 # player_with_longest_name()
 
