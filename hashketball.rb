@@ -223,6 +223,23 @@ game_hash.each do |key, value|
   # return player +' with ' +"#{score} points"
 end
 
+def big_shoe_rebounds()
+  shoe_size = 0
+  rebounds = 0 
+  player_name = nil
+  game_hash.each do |key , value|
+    value[:players].each do |prop|
+      if shoe_size < prop[:shoe]
+        player_name = prop[:player_name]
+        shoe_size = prop[:shoe]
+        rebounds = prop[:rebounds]
+      end
+    end
+  end
+  rebounds
+  # shoe_size
+  # player_name
+end
 
 def winning_team()
   team1 = nil
