@@ -201,7 +201,7 @@ end
 # player_stats('Alan Anderson')
 
 
-def num_points_scored()
+def num_points_scored(name)
   score = nil
   player = nil 
 game_hash.each do |key, value|
@@ -211,13 +211,14 @@ game_hash.each do |key, value|
         player = prop[:player_name]
       end
 
-      if score < prop[:points] 
+      if score < prop[:points] && score == name 
         score = prop[:points] 
         player = prop[:player_name]
       end
     end
   end
-  return player +' with ' +"#{score} points"
+  # return player +' with ' +"#{score} points"
+  return score 
 end
 # num_points_scored()
 
