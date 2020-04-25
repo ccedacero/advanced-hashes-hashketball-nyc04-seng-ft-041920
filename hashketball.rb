@@ -137,17 +137,18 @@ game_hash.each do |key, value|
   end
 end
 end
+
 # # num_points_scored('Kemba Walker')
 
-# def shoe_size(passed_name)
-#   game_hash.each do |key , value|
-#     value[:players].each do |prop|
-#       if prop[:player_name] == passed_name 
-#         return prop[:shoe]
-#       end
-#     end
-#   end
-# end
+def shoe_size(passed_name)
+  game_hash.each do |key , value|
+    value[:players].each do |prop|
+      if prop[:player_name] == passed_name 
+        return prop[:shoe]
+      end
+    end
+  end
+end
 
 # shoe_size('Kemba Walker')
 
