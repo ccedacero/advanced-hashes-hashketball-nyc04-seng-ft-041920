@@ -192,7 +192,8 @@ game_hash.each do |key, value|
   end
   end
 end
-player_stats.tap { |hs| hs.delete(:player_name)}
+# player_stats.tap { |hs| hs.delete(:player_name)}
+player_stats
 end
 
 # player_stats('Alan Anderson')
